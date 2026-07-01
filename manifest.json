@@ -1,0 +1,21 @@
+{
+  "name": "点餐系统小程序端",
+  "appid": "__UNI__ORDER_DEMO",
+  "description": "跨端应用开发课程实验项目",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "postcss": true,
+      "minified": true
+    },
+    "usingComponents": true
+  },
+  "uniStatistics": {
+    "enable": false
+  }
+}
