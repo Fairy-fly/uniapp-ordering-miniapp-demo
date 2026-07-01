@@ -1,3 +1,5 @@
+import { formatDateTime } from './format'
+
 const clone = (value) => JSON.parse(JSON.stringify(value))
 
 const storage = {
@@ -243,7 +245,7 @@ function createOrder(data) {
     goodsAmount,
     deliveryFee,
     payAmount: Number((goodsAmount + deliveryFee).toFixed(2)),
-    createdAt: new Date().toLocaleString('zh-CN', { hour12: false })
+    createdAt: formatDateTime(new Date())
   }
   const orders = [order, ...getOrders()]
   saveOrders(orders)

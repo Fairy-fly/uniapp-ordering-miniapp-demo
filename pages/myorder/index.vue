@@ -10,7 +10,7 @@
           <text>{{ order.items.map((item) => item.name).join('、') }}</text>
         </view>
         <view class="order-foot">
-          <text>{{ order.createdAt }}</text>
+          <text>{{ formatDateTime(order.createdAt) }}</text>
           <text class="amount">¥{{ order.payAmount }}</text>
         </view>
       </view>
@@ -21,6 +21,7 @@
 
 <script>
 import EmptyState from '@/components/empty-state/index.vue'
+import { formatDateTime } from '@/utils/format'
 
 export default {
   components: {
@@ -35,6 +36,7 @@ export default {
     this.$store.dispatch('order/loadOrdersFromStorage')
   },
   methods: {
+    formatDateTime,
     goDetail(order) {
       uni.navigateTo({
         url: `/pages/myorder/detail?id=${order.id}`

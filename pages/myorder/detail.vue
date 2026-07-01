@@ -6,7 +6,7 @@
           <text class="status">{{ order.statusText }}</text>
           <text class="order-no">{{ order.orderNo }}</text>
         </view>
-        <text class="time">{{ order.createdAt }}</text>
+        <text class="time">{{ formatDateTime(order.createdAt) }}</text>
       </view>
 
       <view class="card block">
@@ -45,6 +45,7 @@
 <script>
 import EmptyState from '@/components/empty-state/index.vue'
 import RefundOrder from '@/components/refund_order/index.vue'
+import { formatDateTime } from '@/utils/format'
 
 export default {
   components: {
@@ -55,6 +56,9 @@ export default {
     order() {
       return this.$store.state.order.currentOrder
     }
+  },
+  methods: {
+    formatDateTime
   },
   onLoad(options) {
     this.$store.dispatch('order/fetchOrderDetail', options.id || 'order_demo_001')
