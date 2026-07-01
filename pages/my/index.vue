@@ -27,19 +27,19 @@
     <view class="menu card">
       <view class="menu-row" @tap="goOrders">
         <text>我的订单</text>
-        <text class="arrow">></text>
+        <view class="menu-chevron"></view>
       </view>
       <view class="menu-row" @tap="goProfile">
         <text>修改个人资料</text>
-        <text class="arrow">></text>
+        <view class="menu-chevron"></view>
       </view>
       <view class="menu-row" @tap="goBind">
         <text>绑定手机号</text>
-        <text class="arrow">></text>
+        <view class="menu-chevron"></view>
       </view>
       <view v-if="isLogin" class="menu-row danger" @tap="logout">
         <text>安全退出登录</text>
-        <text class="arrow">></text>
+        <view class="menu-chevron"></view>
       </view>
     </view>
   </view>
@@ -176,8 +176,13 @@ export default {
   border-bottom: 0;
 }
 
-.arrow {
-  color: #b3a69f;
+.menu-chevron {
+  width: 18rpx;
+  height: 18rpx;
+  border-top: 3rpx solid #b3a69f;
+  border-right: 3rpx solid #b3a69f;
+  transform: rotate(45deg);
+  flex-shrink: 0;
 }
 
 .danger {
