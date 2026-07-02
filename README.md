@@ -130,16 +130,16 @@ dist/build/mp-weixin
 
 ## 页面截图占位
 
-截图后可放入 `screenshots/` 目录，并在 README 中替换为真实图片。
+截图后可放入 `screenshots/` 目录，并在 README 中替换为真实图片。当前仓库不伪造截图，未补图前请以 `screenshots/README.md` 中的清单为准。
 
 | 页面 | 截图占位 |
 | --- | --- |
 | 首页 | `screenshots/home.png` |
 | 商家列表 | `screenshots/shop-list.png` |
-| 菜品详情 | `screenshots/goods-detail.png` |
+| 菜品详情 | `screenshots/dish-detail.png` |
 | 购物车 | `screenshots/cart.png` |
-| 确认订单 | `screenshots/order-submit.png` |
-| 支付成功 | `screenshots/pay-success.png` |
+| 确认订单 | `screenshots/order-confirm.png` |
+| 支付成功 | `screenshots/payment-success.png` |
 | 订单列表 | `screenshots/order-list.png` |
 | 个人中心 | `screenshots/profile.png` |
 

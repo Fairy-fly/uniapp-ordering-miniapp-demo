@@ -8,10 +8,10 @@
 | --- | --- |
 | 首页 | `home.png` |
 | 商家列表 | `shop-list.png` |
-| 菜品详情 | `goods-detail.png` |
+| 菜品详情 | `dish-detail.png` |
 | 购物车 | `cart.png` |
-| 确认订单 | `order-submit.png` |
-| 支付成功 | `pay-success.png` |
+| 确认订单 | `order-confirm.png` |
+| 支付成功 | `payment-success.png` |
 | 订单列表 | `order-list.png` |
 | 个人中心 | `profile.png` |
 
